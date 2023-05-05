@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
   <div class="logo-container">
@@ -38,8 +39,8 @@
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label for="email">EMAIL</label>
-            <input type="email" id="email" name="email">
+            <label for="email">EMAIL*</label>
+            <input type="email" id="email" name="email" required>
           </div>
           <div class="form-group">
             <label for="phone">PHONE NUMBER</label>
@@ -48,15 +49,20 @@
         </div>
         <div class="form-row">
           <div class="form-group">
-            <label for="pwd">PASSWORD</label>
-            <input type="password" id="pwd" name="pwd">
+            <label for="pwd">PASSWORD*</label>
+            <input type="password" id="pwd" name="pwd" minlength="8" required>
           </div>
           <div class="form-group">
-            <label for=confirmpwd">CONFIRM PASSWORD</label>
-            <input type="password" id="confirmpwd" name="confirmpwd">
+            <label for=confirmpwd">CONFIRM PASSWORD*</label>
+            <input type="password" id="confirmpwd" name="confirmpwd" minlength="8" required>
           </div>
+         
         </div>
+        <p class="match"></p>
+        <hr>
+          <button type="button">Create Account</button>
       </form>
+      <a href="#">Already Have an account? Log in!</a>
     </div>
   </div>
 </body>
